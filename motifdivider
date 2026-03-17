@@ -1,0 +1,13 @@
+import React from "react";
+
+export default function MotifDivider({ className = "" }) {
+  return (
+    <div className={`flex items-center gap-3 text-muted-foreground/30 select-none ${className}`}>
+      <div className="h-px flex-1 bg-border" />
+      <span className="text-sm tracking-widest">&amp;</span>
+      <span className="text-sm tracking-widest">&gt;</span>
+      <span className="text-sm tracking-widest">…</span>
+      <div className="h-px flex-1 bg-border" />
+    </div>
+  );
+}
